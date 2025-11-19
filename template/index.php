@@ -20,233 +20,183 @@ get_header();
 
 
 
-<section class="section-intro bg-secondary pt30 pb0 is-relative z-index-1">
+<section class="section-intro bg-secondary pt0 pb0 is-relative z-index-1">
 	<div class="wrap is-relative">
 
 		<div class="columns is-mobile is-multiline">
 			<div class="column is-7-tablet is-12-mobile waypoint animation_left xhas-text-centered-mobile">
 
-				<div class="columns is-vcentered is-mobile mt50 mt0-mobile">
+				<div class="columns is-vcentered is-mobile  mt85 mt0-mobile">
 					<div class="column is-narrow waypoint animation_left">
-						<img src="<?=IMG?>quax.webp" alt="logo <?=EMPRESA?>" class="logo">
-					</div>
-					<div class="column is-narrow waypoint animation_left">
-						<p class="logo-txt"><span class="has-text-weight-light">ESTÚDIO</span> <span class="has-text-weight-medium">QUAX</span></p>
+						<img src="<?=IMG?>hotsprint-logo.webp" alt="logo <?=EMPRESA?>" class="logo ml10">
 					</div>
 				</div>
 
 
-				<h1 class="txt-big mt50 mt30-mobile">
-					<span class="has-text-weight-bold">WEBSITES</span><br>
-					PERSONALIZADOS<br class="is-hidden-mobile">
-					PARA <span class="has-text-weight-bold">CONSTRUTORAS</span>
+				<h1 class="txt-big mt105 mb35 mt30-mobile">
+					<span class="has-text-weight-bold">HOTSITE RÁPIDO PARA</span><br>
+					LANÇAMENTOS IMOBILIÁRIOS.
 				</h1>
 
-				<p class="mt50 mt30-mobile">
-					<strong>SERIEDADE</strong> E <strong>INOVAÇÃO</strong> QUE TRANSFORMAM<br class="is-hidden-mobile">
-					PRESENÇA DIGITAL EM <strong>VALOR DE MERCADO.</strong>
+                <hr>
+
+				<p class="mt35 mt30-mobile">
+					<strong>A solução perfeita para construtoras que não podem esperar por um desenvolvimento exclusivo.</strong><br class="is-hidden-mobile">
+                    Um hotsite pronto, flexível e pensado para gerar conversão desde o primeiro acesso.
 				</p>
 
 
 				<?php
 					renderBtn([
 						'href'   => '#contato',
-						'text'   => 'QUERO UM SITE PARA MINHA CONSTRUTORA',
-						'class'  => 'mt90 mb40 mt40-mobile animation_bottom_dd2 smooth-scroll-link',
+						'text'   => 'QUERO UM HOTSITE PARA O MEU EMPREENDIMENTO',
+						'class'  => 'mt55 mb130 mt40-mobile animation_bottom_dd2 smooth-scroll-link',
 					]);
 				?>
 
 			</div>
 
-			<div class="column is-5-tablet is-12-mobile pb0 pl50 pl10-mobile waypoint animation_right_dd1 is-relative is-flex is-align-items-flex-end">
-				<picture>
-					<source srcset="<?=IMG?>quax-top.webp" media="(max-width: 578px)">
-					<source srcset="<?=IMG?>quax-top.webp" media="(min-width: 579px)">
-					<img src="<?=IMG?>quax-top.webp" alt="" class="img is-block js-parallax-h" data-offset="100"  data-direction="right">
-				</picture>
+			<div class="column is-5-tablet is-12-mobile pb0 pl10-mobile waypoint animation_right_dd1 is-relative is-flex is-align-items-flex-end">
 
-				<picture>
-					<source srcset="<?=IMG?>web-sites-quax.webp" media="(max-width: 578px)">
-					<source srcset="<?=IMG?>web-sites-quax.webp" media="(min-width: 579px)">
-					<img src="<?=IMG?>web-sites-quax.webp" alt="web sites quax" class="img2 waypoint animation_right_dd2 js-parallax-h" data-offset="200">
-				</picture>
+
 
 			</div>
 		</div>
 
 
 	</div>
+
+    <picture class="building-image">
+        
+        <img src="<?=IMG.'artefacto-ck-logotipo.webp'?>" class="logo-artefacto" alt="Logotipo Artefacto - Ck Construtora">
+        
+        <source srcset="<?=IMG?>quax-top.webp" media="(max-width: 578px)">
+        <source srcset="<?=IMG?>quax-top.webp" media="(min-width: 579px)">
+        <img src="<?=IMG?>quax-top.webp" alt="" class="img is-block ">
+    </picture>
+
+    <img src="<?=IMG.'sombra-direita.webp'?>" class="sombra-direita" alt="">
+    <img src="<?=IMG.'sombra-esquerda.webp'?>" class="sombra-esquerda" alt="">
+
 </section>
 
-
-
-
-
-
-
-
-
-
-
-
-
-<section class="section-block-2 bg-ll-gray">
+<section class="section-block-2">
 	<div class="wrap">
+        <div class="container-block-2">
+            <div class="left">
+                <img src="<?=IMG.'sectio-block-2-img.jpg'?>" class="background-img" alt="">
+            </div>
+            <div class="right pl65 pt10">
 
- 		<div class="columns is-mobile is-multiline mt100">
- 			<div class="column is-narrow is-12-mobile is-relative">
-				<h2 class="mb0 waypoint animation_left_dd1">
-					VEJA AS CONSTRUTORAS QUE<br>
-					JÁ <span class="has-text-weight-bold color-primary">CONFIARAM</span> NA <span class="has-text-weight-bold color-primary">QUAX.</span>
-				</h2>
-				<div class="line bg-primary waypoint animation_scale_x_d1"></div>
- 			</div>
-		</div>
+                <figure class="hotsprint-circular-logo">
+                    <img src="<?=IMG?>hotsprint-circular-logo-simbol.png" alt="" class="img is-block ">
+                    <img src="<?=IMG?>hotsprint-circular-logo-helice.png" alt="" class="img is-block ">
+                </figure>
+
+                <h2>
+                    <strong>O impulso digital que</strong> <br>
+                    SEU lançamento precisa.
+                </h2>
+
+                <hr>
+
+                <p>
+                    O <strong>HOTSPRINT</strong> é uma ferramenta de assinatura desenvolvida pela <strong>QUAX</strong>, que <br>
+                    permite à sua construtora lançar rapidamente um <strong>hotsite de apresentação de</strong> <br>
+                    <strong>empreendimento</strong>, usando uma estrutura visual limpa, moderna e <br>
+                    totalmente otimizada para conversão. <br>
+                </p>
+
+                <div class="text-content">
+                    <div class="check-items">
+                        <div>
+                            <img src="<?=IMG.'checkbox-img.jpg'?>" class="" alt="">
+                            <p>Lançamentos na planta.</p>
+                        </div>
+                        <div>
+                            <img src="<?=IMG.'checkbox-img.jpg'?>" class="" alt="">
+                            <p>Empreendimentos em fase de pré-venda.</p>
+                        </div>
+                        <div>
+                            <img src="<?=IMG.'checkbox-img.jpg'?>" class="" alt="">
+                            <p>Projetos que precisam de presença digital imediata.</p>
+                        </div>
+                    </div>
+
+                    <?php
+                        renderBtn([
+                            'href'   => '#contato',
+                            'text'   => 'QUERO ATENDIMENTO NO WHATSAPP',
+                            'class'  => 'mt45 mb110 mt40-mobile animation_bottom_dd2 smooth-scroll-link',
+                        ]);
+                    ?>
+
+                </div>
 
 
-
-		<div class="columns is-vcentered is-mobile is-multiline mt120 mt90-mobile logos has-text-centered-mobile">
-			<div class="column is-2-tablet is-6-mobile"> <?=getImg('logos/01.webp', 'vokkan', 'waypoint animation_bottom'); ?> </div>
-			<div class="column is-2-tablet is-6-mobile"> <?=getImg('logos/02.png',  'lotisa', 'waypoint animation_bottom'); ?> </div>
-			<div class="column is-2-tablet is-6-mobile"> <?=getImg('logos/03.webp', 'clarus construtora', 'waypoint animation_bottom'); ?> </div>
-			<div class="column is-2-tablet is-6-mobile"> <?=getImg('logos/04.png',  'racitec empreendimentos', 'waypoint animation_bottom'); ?> </div>
-			<div class="column is-2-tablet is-6-mobile"> <?=getImg('logos/05.webp', 'raimundi construtora', 'waypoint animation_bottom'); ?> </div>
-			<div class="column is-2-tablet is-6-mobile"> <?=getImg('logos/06.webp', 'alumbra empreendimentos', 'waypoint animation_bottom'); ?> </div>
-			<div class="column is-2-tablet is-6-mobile"> <?=getImg('logos/07.webp', 'grupo n1 empreendimentos', 'waypoint animation_bottom'); ?> </div>
-			<div class="column is-2-tablet is-6-mobile"> <?=getImg('logos/08.svg',  'gessele empreendimentos', 'waypoint animation_bottom'); ?> </div>
-			<div class="column is-2-tablet is-6-mobile"> <?=getImg('logos/09.webp', 'inbrasul empreendimentos', 'waypoint animation_bottom'); ?> </div>
-			<div class="column is-2-tablet is-6-mobile"> <?=getImg('logos/10.webp', 'sbj construtora', 'waypoint animation_bottom'); ?> </div>
-			<div class="column is-2-tablet is-6-mobile"> <?=getImg('logos/11.webp', 'cn empreendimentos', 'cn ml20 ml0-mobile waypoint animation_bottom'); ?> </div>
-			<div class="column is-2-tablet is-6-mobile"> <?=getImg('logos/12.webp', 'dall empreendimentos', 'dall ml10 ml0-mobile waypoint animation_bottom'); ?> </div>
-		</div>
-
-
-		<p class="mt60 mt40-mobile waypoint animation_bottom">
-			<span class="has-text-weight-bold">CONSTRUTORAS LÍDERES</span> JÁ TRANSFORMARAM SUA PRESENÇA DIGITAL<br class="is-hidden-mobile">
-			EM RESULTADOS REAIS.<br class="is-hidden-tablet">
-			<span class="has-text-weight-bold color-primary">A PRÓXIMA CONSTRUTORA PODE SER A SUA.</span>
-		</p>
-
-
-
-		<?php
-			renderBtn([
-				'href'   => '#contato',
-				'text'   => 'FALE AGORA COM NOSSO CONSULTOR',
-				'class'  => 'mt70 mt50-mobile animation_bottom smooth-scroll-link',
-			]);
-		?>
-
+            </div>
+        </div>
 
 	</div>
 </section>
 
+<?php
+    $cards = [
+        [
+            'img'   => IMG.'nuvem.webp',
+            'title' => 'Primeiro <br> dia',
+            'text'  => 'Sua construtora envia <br> os conteúdos e imagens.'
+        ],
+        [
+            'img'   => IMG.'pc-nuvem.webp',
+            'title' => 'Segundo <br> dia',
+            'text'  => 'Aplicamos tudo dentro <br>da ferramenta Hotsprint.'
+        ],
+        [
+            'img'   => IMG.'nuvem-pessoa.webp',
+            'title' => 'Terceiro <br> dia',
+            'text'  => 'Você revisa e valida.'
+        ],
+        [
+            'img'   => IMG.'foguete.webp',
+            'title' => 'Quarto <br> dia',
+            'text'  => 'O hotsite é publicado e <br> pronto para gerar conversão.'
+        ],
+    ];
+?>
+<section class="section-como-funciona is-relative ">
+    <div class="wrap">
+        <h2 class="mb0">
+            <strong>COMO</strong><br>
+            FUNCIONA.
+        </h2>
+        <hr>
+        <p>Seu HOTSITE publicado em 4 passos simples.</p>
+
+        <div class="cards-container mt70">
+            <?php foreach ($cards as $card): ?>
+                <div class="single-card">
+                    <img src="<?= $card['img'] ?>" class="icon-card" alt="">
+                    <strong class="mt25"><?= $card['title'] ?></strong>
+                    <hr>
+                    <p><?= $card['text'] ?></p>
+                    
+                    <img src="<?=IMG.'lente-card.webp'?>" class="overlay" alt="">
+                </div>
+            <?php endforeach; ?>
+        </div>
 
 
+        <?php
+            renderBtn([
+                'href'   => '#contato',
+                'text'   => 'QUERO UM HOTSITE PARA O MEU EMPREENDIMENTO',
+                'class'  => 'mt90 animation_bottom_dd2 smooth-scroll-link',
+            ]);
+        ?>
 
+    </div>
 
-
-
-
-
-
-
-
-
-
-<section class="section-diferenciais is-relative">
-
-	<div class="line tp bg-primary waypoint animation_scale_y"></div>
-	<div class="line bt bg-primary waypoint animation_scale_y"></div>
-
-	<div class="scroll-downs waypoint animation_scale is-hidden-mobile">
-		<div class="mousey">
-			<div class="scroller bg-primary"></div>
-		</div>
-	</div>
-
-	<div class="wrap pb160 pb30-mobile">
-
-		<div class="columns is-multiline is-mobile mt110 mt10-mobile">
-
-			<div class="column is-6-tablet is-12-mobile pr120 pr10-mobile has-text-right has-text-left-mobile mt40">
-
-				<h2 class="waypoint animation_left">
-					POR QUE UM <span class="has-text-weight-bold color-primary">SITE DA QUAX</span><br>
-					FAZ A DIFERENÇA PARA<br>
-					<span class="has-text-weight-bold color-primary">SUA CONSTRUTORA</span>?
-				</h2>
-
-
-				<?php
-					renderBtn([
-						'href'   => LINK_WHATSAPP,
-						'text'   => 'QUERO ATENDIMENTO NO WHATSAPP',
-						'class'  => 'mt70 animation_bottom smooth-scroll-link is-hidden-mobile',
-						'target' => '_blank'
-					]);
-				?>
-
-			</div>
-
-
-			<div class="column is-6-tablet is-12-mobile pl5 pl10-mobile mt5">
-
-
-				<div class="<?=(!$MOBILE ? 'slide' : ''); ?> itens is-uppercase waypoint animation_bottom">
-
-					<div class="item">
-						<p class="t1 color-primary"> CÓDIGO 100% PERSONALIZADO </p>
-						<p class="t2 fs-12">Sem uso de plataformas prontas ou limitadas.</p>
-					</div>
-
-					<div class="item">
-						<p class="t1 color-primary"> LAYOUTS AUTORAIS </p>
-						<p class="t2 fs-12">Valorizando os empreendimentos e refletindo sua identidade.</p>
-					</div>
-
-					<div class="item">
-						<p class="t1 color-primary"> EXPERIÊNCIA DIGITAL PROJETADA PARA GERAR LEADS </p>
-						<p class="t2 fs-12">E facilitar o contato com o cliente.</p>
-					</div>
-
-					<div class="item">
-						<p class="t1 color-primary"> SUPORTE ESPECIALIZADO E PRÓXIMO </p>
-						<p class="t2 fs-12">Acompanhando sua construtora durante todo o processo.</p>
-					</div>
-
-					<div class="item">
-						<p class="t1 color-primary"> Integração com WhatsApp e formulários inteligentes </p>
-						<p class="t2 fs-12">otimizando seu atendimento.</p>
-					</div>
-
-					<div class="item">
-						<p class="t1 color-primary"> SEO projetado para melhor ranqueamento no Google </p>
-						<p class="t2 fs-12">e atração de clientes qualificados.</p>
-					</div>
-
-					<div class="item"></div>
-					<div class="item"></div>
-				</div>
-
-				
-			</div>
-
-
-
-			<?php
-				renderBtn([
-					'href'   => LINK_WHATSAPP,
-					'text'   => 'QUERO ATENDIMENTO NO WHATSAPP',
-					'class'  => 'mt20 animation_bottom smooth-scroll-link is-hidden-tablet',
-					'target' => '_blank'
-				]);
-			?>
-
-		</div>
-
-
-	</div>
 </section>
 
 

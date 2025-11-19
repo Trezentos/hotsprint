@@ -29,9 +29,9 @@ a:hover{ color: $primary-color; }
 strong{ font-weight: 800; color: $root-color; }
 
 h1, h2{ 
-   @include fs-vw(2.4);
+   @include fs-vw(3);
    // font-size: 4.2em;
-   // line-height: 1.1;
+    line-height: 1.6;
    font-weight: 400;
    color: $root-color;
    // letter-spacing: .12em;
@@ -85,6 +85,8 @@ section{
 
 p{
    font-size: 1.6em;
+   letter-spacing: 0.05em;
+   line-height: 1.875;
    // @include fs-vw(2.2);
 }
 
@@ -103,7 +105,7 @@ small{
    max-width: 1530px;
    width: 100%;
    margin: 0 auto;
-   padding: 0 35px;
+   padding: 0 33px;
 
    &.compact{ max-width: 1000px; }
    &.wide{ max-width: 1470px; }

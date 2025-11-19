@@ -7,12 +7,12 @@
 
 .btn{
    position: relative;
-   background: $primary-color;
-   border: 1px solid $primary-color;
-   border-radius: 33px;
+   background: white;
+   border: 1px solid white;
+   border-radius: 30px;
    display: inline-block;
    margin: 25px auto;
-   padding: 18px 45px 17px;
+   padding: 16px 80px 16px;
    cursor: pointer;
    transition: all .2s linear;
    height: auto;
@@ -21,12 +21,14 @@
    outline: none;
    font-family: $primary-font;
    overflow: hidden;
-   letter-spacing: 0.37em;
+   letter-spacing: 0.05em;
    @include text($color: #f3f1eb, $size: 1.3em, $weight: 300, $align: center);
 
    span{
       position: relative;
       z-index: 1;
+      font-size: 14px;
+      color: black;
    }
 
    &:after{
@@ -44,6 +46,9 @@
       border-color: $dark-color;
       
       &:after{ height: 100%; left: 0; }
+
+
+      span { color: white; }
    }
 
    i{
