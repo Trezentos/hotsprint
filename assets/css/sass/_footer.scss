@@ -1,0 +1,17 @@
+/* ------------------------|
+|                          |
+|          FOOTER          |
+|                          |
+| -------------------------|
+*/
+
+footer{
+   .assinatura a{
+      color: $ll-gray;
+      font-weight: 200;
+
+      &:hover{
+         color: black;
+      }
+   }
+}

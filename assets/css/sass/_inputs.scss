@@ -1,0 +1,83 @@
+
+/* ------------------------|
+|                          |
+|       STYLE INPUT        |
+|                          |
+| -------------------------|
+*/
+
+$bdr: 15px;
+$padding: 17px 30px 15px;
+
+input, .input{
+   border: none;
+   // border-bottom: 1px solid $primary-color;
+   border-radius: $bdr;
+   padding: $padding;
+   @include size(100%, auto);
+   @include text($root-color, $size: 1.5em);
+   outline: none;
+   // background: #FFF;
+   background: rgba(255,255,255,0.3);
+   font-family: $primary-font;
+   letter-spacing: .2em;
+   box-shadow: none;
+
+   @include placeholder{
+      color: $root-color;
+   }
+}
+
+.select{
+   height: auto !important;
+   width: 100%;
+}
+.select select{
+   border: none;
+   // border-bottom: 2px solid $primary-color;
+   border-radius: $bdr;
+   padding: 9px 23px 12px 0;
+   height: auto;
+   @include text($primary-color, $size: 2em);
+   font-family: $primary-font !important;
+   background: #FFF;
+   transition: all 0.2s linear;
+   width: 100%;
+   box-shadow: none !important;
+}
+.select:not(.is-multiple):not(.is-loading)::after{ border-color: #AAA; border-width: 2px; }
+
+textarea, .textarea{
+   border: none;
+   // border-bottom: 1px solid $primary-color;
+   border-radius: $bdr;
+   padding: $padding;
+   width: 100%;
+   @include text($root-color, $size: 1.5em);
+   outline: none; 
+   // background: #FFF;
+   background: rgba(255,255,255,0.3);
+   font-family: $primary-font;
+   letter-spacing: .2em;
+
+   @include placeholder{
+      color: $root-color;
+   }
+}
+
+button, .button{
+   border: none;
+   // border: 2px solid $primary-color;
+   // border-radius: 37px;
+   cursor: pointer; 
+   transition: all 0.2s linear;
+   padding: 15px 25px 14px;
+   font-family: $primary-font;
+   font-weight: 400;
+   // letter-spacing: 1px;
+}
+
+.input:focus, .textarea:focus, .select select:focus, .input:active, .textarea:active, .select select:active{
+   border-color: $secondary-color;
+   box-shadow: none;
+}

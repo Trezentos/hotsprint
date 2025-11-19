@@ -1,0 +1,34 @@
+/*
+* West Slider v1.0.0
+*
+* Copyright 2024 Willian West
+* Free to use under the GPLv2 and later license.
+* http://www.gnu.org/licenses/gpl-2.0.html
+*
+* Contributing author: Willian West (@willianwest)
+*
+*/
+
+.west-stage-outer {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.west-stage-outer .west-stage {
+    display: flex;
+    flex-direction: column;
+    /* cursor: grab; */
+}
+
+.west-stage-outer .west-stage .item{
+    box-sizing: border-box;
+    flex: none;
+    min-width: 100px;
+    user-select: none; /* Evita a seleção de texto/imagem */
+}
+
+.west-stage-outer .west-stage .item img {
+    user-select: none;    /* Evita a seleção de texto/imagem */
+    -webkit-user-drag: none; /* Desativa o arrasto nativo no Safari */
+}

@@ -1,0 +1,99 @@
+/* ------------------------|
+|                          |
+|       STYLE BUTTONS      |
+|                          |
+| -------------------------|
+*/
+
+.btn{
+   position: relative;
+   background: $primary-color;
+   border: 1px solid $primary-color;
+   border-radius: 33px;
+   display: inline-block;
+   margin: 25px auto;
+   padding: 18px 45px 17px;
+   cursor: pointer;
+   transition: all .2s linear;
+   height: auto;
+   // width: 400px;
+   max-width: 100%;
+   outline: none;
+   font-family: $primary-font;
+   overflow: hidden;
+   letter-spacing: 0.37em;
+   @include text($color: #f3f1eb, $size: 1.3em, $weight: 300, $align: center);
+
+   span{
+      position: relative;
+      z-index: 1;
+   }
+
+   &:after{
+      content:'';
+      background: $dark-color;
+      @include size(100%, 0);
+      @include absolute($t: 0, $l: 0%, $z: 0);
+      @include transition(0.5s);
+      border-radius: 30px;
+   }
+
+
+   &:hover{
+      color: #FFF;
+      border-color: $dark-color;
+      
+      &:after{ height: 100%; left: 0; }
+   }
+
+   i{
+      font-size: 19px;
+      line-height: 25px;
+      margin-right: 3px;
+   }
+
+   svg{
+      margin-left: 10px;
+      transform: translateY(3px);
+   }
+   
+   &.is-transparent{
+      background: none;
+      color: $primary-color;
+      // border-color: #5F584D;
+
+      &:hover{ color: #FFF; }
+
+      // svg{
+      //    path{
+      //       stroke: $primary-color;
+      //    }
+      // }
+   }
+
+   &.is-white{
+      background: none;
+      color: $ll-gray;
+      border-color: $ll-gray;
+
+      &:hover{ color: $ll-gray; }
+   }
+
+   &.is-dark{
+      background: $dark-color;
+      color: $ll-gray;
+      border-color: $dark-color;
+
+      &:hover{
+         color: $ll-gray;
+         border-color: $primary-color;
+      }
+
+      &:after{ background: $primary-color; }
+   }
+
+   &.is-hover-white{
+      &:after{ background: #FFF; }
+      &:hover{ color: $primary-color; }
+   }
+}

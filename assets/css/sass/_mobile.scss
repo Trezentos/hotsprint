@@ -1,0 +1,257 @@
+/************************* NOTEBOOK **************************/
+
+@media only screen and (min-width: 1025px) and (max-width: 1590px) {
+    
+    .section-intro{
+        .img{ max-width: 100%; }
+        .img2{ max-width: 100%; }
+    }
+
+}
+
+
+
+
+/*
+  ________________________________________
+/|                                        |\
+||    ______________                      ||
+||                                        ||
+||    ______________                      ||
+||    ______________                      ||
+||    ______________                      ||
+||    ______________                      ||
+||                                        ||
+||                                        ||
+||________________________________________||
+\|________________________________________|/
+*/
+
+/*********************** TABLET LANDSCAPE ***********************/
+
+@media only screen and (min-width: 577px) and (max-width: 1024px){
+
+    body{ font-size: 54%; }
+
+    section{ padding: 70px 0; }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+  __________________________
+/|                          |\
+||                          ||
+||      ______________      ||
+||                          ||
+||      ______________      ||
+||      ______________      ||
+||      ______________      ||
+||                          ||
+||                          ||
+||                          ||
+||                          ||
+||                          ||
+||                          ||
+||                          ||
+||                          ||
+||__________________________||
+\|__________________________|/
+*/
+
+/*********************** TABLET PORTRAIT **********************/
+
+@media only screen and (min-width: 577px) and (max-width: 768px){
+
+    body{ font-size: 46%; }
+
+    section{ padding: 50px 0; }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+  __________________
+/|__________________|\
+||                  ||
+||                  ||
+||                  ||
+||    __________    ||
+||    __________    ||
+||    __________    ||
+||    __________    ||
+||                  ||
+||                  ||
+||                  ||
+||                  ||
+||                  ||
+||                  ||
+||                  ||
+||__________________||
+\|__________________|/
+*/
+
+/************************* SMARTPHONE **************************/
+
+@media only screen and (max-width: 576px) {
+
+    // BODY
+    body{
+        font-size: 52%;
+    }
+
+    p{ font-size: 1.6em; }
+
+    .fs-12{ font-size: 1.5em !important; }
+    .fs-22{ font-size: 2em; }
+
+    // DISABLE ANIMATION
+    // .waypoint{ opacity: 1; }
+
+
+    // CONTAINER
+    .wrap{ padding: 0 35px; }
+
+    section{ padding: 70px 0; }
+
+
+
+    // TITLES
+    h1, h2{
+        font-size: 1.9em;
+        margin-bottom: 20px;
+        // line-height: 1.2;
+        // letter-spacing: .1em;
+    }
+
+    h3{
+        font-size: 2.3em;
+        letter-spacing: .1em;
+    }
+    // h4{ font-size: 14px; }
+
+
+    .btn{
+        padding-right: 28px;
+        padding-left: 28px;
+        letter-spacing: 0.15em;
+        width: 100%;
+        font-weight: 600;
+        font-size: 1.6em;
+        border-radius: 43px;
+    }
+
+
+
+    // HOME *************************************
+    
+    .section-intro {
+
+        .img{ max-width: 100%; }
+
+        .img2{
+            max-width: calc(100% + 50px);
+            bottom: -50px;
+        }
+
+        .txt-big{
+            font-size: 2.4em;
+            letter-spacing: 0.3em;
+        }
+    }
+
+
+    .section-block-2{
+        .logos img{
+            max-width: 72%;
+            max-height: 70px;
+            margin-bottom: 25px;
+
+            &.cn{ max-width: 56%; }
+            &.dall{ max-width: 63%; }
+        }
+    }
+
+
+    .section-diferenciais{
+        .line{
+            height: 100px;
+
+            &.tp{ top: -50px; }
+            &.bt{ bottom: -50px; }
+        }
+
+        .itens{
+            .item{
+                margin-bottom: 40px;
+                border-left: 1px solid $primary-color;
+                padding-left: 20px;
+            }
+
+            .t1{
+                font-weight: 600;
+                margin-bottom: 10px;
+                font-size: 1.8em;
+                letter-spacing: 0.2em;
+                line-height: 1.7;
+            }
+
+            .t2{ letter-spacing: .2em; }
+        }
+    }
+
+
+    .section-final{
+        .galo{
+            max-width: 150px;
+            left: calc(50% - 57px);
+        }
+
+        .logo{ max-width: 40px; }
+    }
+
+
+    .section-home-contato{
+        .img2{
+            left: -23px;
+            bottom: -80px;
+            max-width: calc(100% + 46px);
+        }
+
+        h2{ letter-spacing: .3em; }
+    }
+
+
+    // FOOTER
+
+    footer{
+        .assinatura{ font-size: 1.4em; }
+    }
+
+}
