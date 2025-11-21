@@ -6,8 +6,8 @@
 | -------------------------|
 */
 
-$bdr: 15px;
-$padding: 17px 30px 15px;
+$bdr: 24px;
+$padding: 25px 44px 25px;
 
 input, .input{
    border: none;
@@ -15,12 +15,12 @@ input, .input{
    border-radius: $bdr;
    padding: $padding;
    @include size(100%, auto);
-   @include text($root-color, $size: 1.5em);
+   @include text($root-color, $size: 1.4em);
    outline: none;
    // background: #FFF;
    background: rgba(255,255,255,0.3);
    font-family: $primary-font;
-   letter-spacing: .2em;
+   letter-spacing: .21em;
    box-shadow: none;
 
    @include placeholder{

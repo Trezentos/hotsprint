@@ -6,12 +6,20 @@
 */
 
 footer{
+   p {
+      text-transform: uppercase;
+   }
+
+   strong {
+      font-weight: 500;
+   }
+
    .assinatura a{
-      color: $ll-gray;
-      font-weight: 200;
+      color: #25282b;
 
       &:hover{
          color: black;
+         text-decoration: underline;
       }
    }
 }

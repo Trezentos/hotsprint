@@ -2,13 +2,13 @@
 $pg = $_SEO["permalink"];
 ?>
 
-			<footer class="xis-relative bg-primary pt40 pb40  pt60-mobile pb60-mobile">
-				<div class="wrap has-text-right has-text-centered-mobile">
+			<footer class="xis-relative bg-secondary pt40 pb40  pt60-mobile pb60-mobile">
+				<div class="wrap has-text-left has-text-centered-mobile">
 
-					<div class="assinatura waypoint animation_right">
-						<a href="https://quax.com.br" target="_blank">ESTÚDIO <span class="has-text-weight-medium">QUAX</span>
-						<br class="is-hidden-tablet">
-						<span class="is-hidden-mobile">-</span> CNPJ 133.14.895/0001-80</a> 
+					<div class="assinatura">
+                        <p>
+                            <strong>Hotsprint</strong> todos os direitos reservados para <a href="https://quax.com.br" target="_blank">ESTúDIO <strong>QUAX</strong> - CNPj 133.14.895/0001-80</a>
+                        </p>
 					</div>
 
 				</div>

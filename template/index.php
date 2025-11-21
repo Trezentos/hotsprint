@@ -4,11 +4,13 @@
 if( !IS_LIGHTHOUSE )
 {
 	add_style([
-		'css/west-slide.css'
+		'css/west-slide.css',
+        'css/swiper-bundle.min.css',
 	]);
 
 	add_javascript([
-		'jquery.westSlideVert.js', 
+        'swiper-bundle.min.js',
+        'jquery.westSlideVert.js',
 		'page-home.js', 
 		'jquery.maskedinput.js',
 	]);
@@ -191,10 +193,69 @@ get_header();
             renderBtn([
                 'href'   => '#contato',
                 'text'   => 'QUERO UM HOTSITE PARA O MEU EMPREENDIMENTO',
-                'class'  => 'mt90 animation_bottom_dd2 smooth-scroll-link',
+                'class'  => 'mt90 mb0 animation_bottom_dd2 smooth-scroll-link',
             ]);
         ?>
+    </div>
 
+</section>
+
+<section class="section-carousel is-relative ">
+    <div class="wrap">
+        <h2 class="mb0">
+            <strong>RESULTADOS REAIS COM</strong><br>
+            O USO DO HOTSPRINT
+        </h2>
+        <hr>
+        <p>Conheça alguns empreendimentos que assinaram a solução do <strong>HOTSPRINT</strong> para entrar com hotsite de alto desempenho.</p>
+
+
+        <?php
+            $qImoveis = [
+                [ 'img' => 'https://picsum.photos/426/570?random=1', 'alt' => 'Imagem teste 1' ],
+                [ 'img' => 'https://picsum.photos/426/570?random=2', 'alt' => 'Imagem teste 2' ],
+                [ 'img' => 'https://picsum.photos/426/570?random=3', 'alt' => 'Imagem teste 3' ],
+                [ 'img' => 'https://picsum.photos/426/570?random=4', 'alt' => 'Imagem teste 4' ],
+                [ 'img' => 'https://picsum.photos/426/570?random=5', 'alt' => 'Imagem teste 5' ],
+                [ 'img' => 'https://picsum.photos/426/570?random=1', 'alt' => 'Imagem teste 1' ],
+                [ 'img' => 'https://picsum.photos/426/570?random=2', 'alt' => 'Imagem teste 2' ],
+                [ 'img' => 'https://picsum.photos/426/570?random=3', 'alt' => 'Imagem teste 3' ],
+                [ 'img' => 'https://picsum.photos/426/570?random=4', 'alt' => 'Imagem teste 4' ],
+                [ 'img' => 'https://picsum.photos/426/570?random=5', 'alt' => 'Imagem teste 5' ],
+            ];
+        ?>
+
+        <div class="swiper slide-imoveis swiper-imoveis mt50 mb90 mb0-tablet mb10-mobile">
+
+            <div class="swiper-wrapper">
+                <?php foreach ($qImoveis as $imovel): ?>
+                    <div class="swiper-slide">
+                        <img
+                                src="<?= $imovel['img']; ?>"
+                                alt="<?= $imovel['alt']; ?>"
+                                width="426"
+                                height="570"
+                        >
+                    </div>
+                <?php endforeach; ?>
+            </div>
+
+
+            <div class="swiper-button-prev outer-prev">prev</div>
+            <div class="swiper-button-next outer-next">next</div>
+            <div class="swiper-scrollbar"></div>
+
+
+        </div>
+
+
+        <?php
+        renderBtn([
+            'href'   => '#contato',
+            'text'   => 'QUERO UM HOTSITE PARA O MEU EMPREENDIMENTO',
+            'class'  => 'mt90 mb0 animation_bottom_dd2 smooth-scroll-link',
+        ]);
+        ?>
     </div>
 
 </section>
@@ -202,136 +263,131 @@ get_header();
 
 
 
+<section class="section-description">
+    <div class="wrap">
+        <div class="container-description">
+            <div class="left">
+                <h2 class="mb0">
+                    <strong class="color-secondary">TUDO O QUE UM HOTSITE</strong><br>
+                    DE LANÇAMENTO PRECISA.
+                </h2>
+                <hr>
+                <p>
+                    O <strong class="color-secondary">HOTSPRINT</strong> oferece uma estrutura visual padronizada e otimizada para
+                    <br>
+                    apresentar seu empreendimento com clareza, velocidade e alta conversão.
+                </p>
+
+                <p class="color-secondary mt35">
+                    <strong>MÓDULOS INCLUÍDOS</strong>
+                </p>
+
+                <?php
+                    $modulos = [
+                        "Conceito / apresentação", "Sobre a região",
+                        "Características do empreendimento", "Plantas e tipologias",
+                        "Localização integrada (Google Maps)", "Vídeo do projeto",
+                        "Formulário de interesse e Whatsapp", "Arquitetos e urbanistas",
+                        "Galeria interna (apartamentos)", "Tour virtual 360º",
+                        "Galeria externa (empreendimento)", "Estágio da obra"
+
+                    ];
+                ?>
+
+                <div class="check-items mt35">
+                    <?php foreach ($modulos as $modulo): ?>
+                        <div>
+                            <img src="<?= IMG.'checkbox-black-img.webp' ?>" alt="">
+                            <p><?= $modulo ?></p>
+                        </div>
+                    <?php endforeach; ?>
+                </div>
+
+                <p class="mt50">Você envia os materiais e informações e nós habilitamos o hotsite.</p>
+
+                <?php
+                    renderBtn([
+                        'href'   => '#contato',
+                        'text'   => 'SOLICITAR ASSINATURA',
+                        'class'  => 'mt60 mb0 animation_bottom_dd2 smooth-scroll-link',
+                    ]);
+                ?>
+            </div>
+            <div class="right pl65 pt10">
 
 
+            </div>
+        </div>
+    </div>
 
-
-
-
-
-
-
-
-<section class="section-final color-gray-light">
-	<div class="wrap has-text-centered mt250 mt170-mobile">
-
-		
-		<div class="columns is-centered is-vcentered is-mobile is-multiline">
-			<div class="column is-5-tablet fs-22 has-text-right waypoint animation_right is-hidden-mobile"> A CADA AMANHECER </div>
-
-			<div class="column is-narrow-tablet is-12-mobile is-relative pl30 pr30">
-				<img src="<?=IMG?>quax.webp" alt="logo <?=EMPRESA?>" class="logo is-relative waypoint animation_scale">
-
-				<img src="<?=IMG?>galo.webp" alt="galo" class="galo waypoint animation_bottom_dd2">
-			</div>
-
-			<div class="column is-5-tablet is-12-mobile fs-22 has-text-left has-text-centered-mobile waypoint animation_left">
-
-				<div class="is-hidden-tablet waypoint animation_right"> A CADA AMANHECER </div>
-
-				UMA NOVA OPORTUNIDADE
-			</div>
-		</div>
-
-
-		<p class="is-uppercase mt70 mt60-mobile waypoint animation_bottom">
-			Na <span class="color-primary">QUAX</span>,<br class="is-hidden-mobile">
-			cada projeto é desenvolvido de forma única.<br>
-			<span class="color-primary">Não usamos modelos prontos</span>.<br>
-			<br>
-
-			O resultado é um site que transmite a <span class="color-primary">essência da sua construtora</span>, <br class="is-hidden-mobile">
-			reforça seu posicionamento no mercado e potencializa suas vendas.<br>
-			<br>
-
-			nosso objetivo é transformar seu site em uma <br>
-			<span class="color-primary">porta de entrada para novos negócios</span>.
-		</p>
-
-
-			
-		<?php
-			renderBtn([
-				'href'   => '#contato',
-				'text'   => 'QUERO UM SITE PARA A MINHA CONSTRUTORA',
-				'class'  => 'mt100 mt70-mobile is-hover-white animation_bottom smooth-scroll-link',
-			]);
-		?>
-
-	</div>
+    <img src="<?=IMG.'hotsprint-sites-image.webp'?>" class="main-img" alt="">
 </section>
 
-
-
-
-
-
-
-
-
-
-<section class="section-home-contato bg-secondary is-relative" id="contato">
+<section class="section-home-contato is-relative" id="contato">
 	<div class="wrap">
 
 
-		<div class="columns is-mobile is-multiline mt70 mt0-mobile">
+		<div class="columns is-mobile is-multiline mt0-mobile">
 
-			<div class="column is-6-tablet is-12-mobile is-relative">
-				<h2 class="waypoint animation_left">
-					<span class="has-text-weight-bold">RECEBA UMA</span><br>
-					PROPOSTA PERSONALIZADA<br> 
-					PARA SUA <span class="has-text-weight-bold">CONSTRUTORA</span>
+			<div class="column is-6-widescreen is-6-tablet is-12-mobile is-relative">
+				<h2 class="waypoint animation_left is-uppercase">
+                    Pronto para lançar <br>
+                    <strong>seu empreendimento</strong> <br>
+                    com mais rapidez <br>
+                    e resultado? <br>
 				</h2>
 
-				<p class="mt50 mt30-mobile waypoint animation_left_d1">PREENCHA O FORMULÁRIO E DESCUBRA COMO SEU 
-				PRÓXIMO SITE PODE IMPULSIONAR SUAS VENDAS.</p>
+                <?php
+                    renderBtn([
+                        'href'   => '#contato',
+                        'text'   => 'QUERO ATENDIMENTO NO WHATSAPP',
+                        'class'  => 'mt60 mb0 animation_bottom_dd2 smooth-scroll-link',
+                    ]);
+                ?>
 
-				<?=getImg('web-sites-quax-footer.webp', 'web sites quax', 'img2 waypoint animation_left_dd1 is-hidden-mobile'); ?>
+                <img src="<?=IMG.'hotsprint-logo-ligher.webp'?>" class="mt95 mb25" alt="">
+
+                <p class="info-container">
+                    <strong><a href="tel:4733496639">47 3349.6639</a></strong> <br>
+                    Av. Sete de setembro, 1439 - sala 107 <br>
+                    fazenda - itajaí - SC ( ver Mapa )
+                </p>
 			</div>
 
-
-
-			<div class="column is-1 is-hiddem-mobile"></div>
-
-
-
-			<div class="column is-5-tablet is-12-mobile is-relative">
+			<div class="column is-6-widescreen is-5-tablet is-12-mobile is-relative">
 
 				<div class="box-contato mb80 mb180-mobile waypoint animation_left">
+                    <h3 class="pl45 mb50">
+                        <strong>PREENCHA</strong> <br>
+                        O FORMULÁRIO
+                    </h3>
+
 					<form id="form-contato" action="" method="post">
 
 						<div class="columns is-mobile is-multiline">
 							<div class="column is-12">
-								<input type="text" name="nome" class="input" placeholder="NOME" required />
+								<input type="text" name="nome" class="input" placeholder="NOME:" required />
 							</div>
 							<div class="column is-12">
-								<input type="text" name="empresa" class="input" placeholder="EMPRESA" required />
+								<input type="text" name="empresa" class="input" placeholder="EMPRESA:" required />
 							</div>
 							<div class="column is-12">
-								<input type="email" name="email" class="input" placeholder="E-MAIL" required />
+								<input type="email" name="email" class="input" placeholder="E-MAIL:" required />
 							</div>
 							<div class="column is-12">
-								<input type="text" name="telefone" class="input telefone" placeholder="WHATSAPP" required />
-							</div>
-
-							<div class="column is-12">
-								<textarea name="mensagem" rows="3" placeholder="MENSAGEM"></textarea>
+								<input type="text" name="telefone" class="input telefone" placeholder="WHATSAPP:" required />
 							</div>
 
 							<div class="column is-12 has-text-right">
 								<!-- <small class="is-block">
 									Ao enviar meus dados confirmo ciência sobre a <a href="politica-de-privacidade" class="color-primary">política de privacidade.</a>
 								</small> -->
-
 								<button class="btn button is-dark mt20 mt0-mobile mb0" type="submit" name="submit"><span>ENVIAR</span></button>
 							</div>
 						</div>
 
 					</form>
 				</div>
-
-
-				<?=getImg('web-sites-quax-footer.webp', 'web sites quax', 'img2 waypoint animation_left_dd1 is-hidden-tablet'); ?>
 
 			</div>
 

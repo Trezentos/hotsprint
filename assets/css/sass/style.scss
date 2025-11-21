@@ -159,15 +159,11 @@
    }
 }
 
-
-
-
-
-
 .section-como-funciona{
    background: #272525;
    min-height: 1055px;
    padding-top: 150px;
+   padding-bottom: 160px;
 
    h2, p, strong {
       color: white;
@@ -176,8 +172,8 @@
    hr {
       background: $secondary-color;
       max-width: 200px;
-      margin-top: 35px;
-      margin-bottom: 35px;
+      margin-top: 34px;
+      margin-bottom: 34px;
    }
 
    .cards-container {
@@ -234,10 +230,122 @@
       height: 60px;
       width: fit-content;
    }
+
+   .swiper.slide-imoveis{
+      overflow: visible;
+
+      .outer-next, .outer-prev{
+         @include size(40px);
+         border-radius: var(--radius-sm);
+         background-color: $d-gray;
+         transition: all 0.2s linear;
+      }
+
+      .outer-prev{
+         left: initial;
+         right: 210px;
+      }
+
+      .outer-next{ right: 158px; }
+
+      .swiper-horizontal>.swiper-scrollbar,
+      .swiper-scrollbar.swiper-scrollbar-horizontal{
+         left: 0;
+      }
+
+      .swiper-scrollbar-drag{
+         height: 8px;
+         top: -2px;
+      }
+
+      .btn-all{
+         @include absolute($b: -110px, $r: 12px);
+      }
+   }
 }
 
 
-.slide{
+
+
+
+ .section-carousel{
+    background: white;
+    min-height: 1055px;
+    padding-top: 150px;
+    padding-bottom: 160px;
+
+    h2, p, strong {
+       color: #04090d;
+    }
+
+    hr {
+       background: #04090d;
+       max-width: 200px;
+       margin-top: 34px;
+       margin-bottom: 34px;
+    }
+
+    .swiper.slide-imoveis{
+       overflow: visible;
+
+       .outer-next, .outer-prev{
+          @include size(40px);
+          border-radius: var(--radius-sm);
+          background-color: $d-gray;
+          transition: all 0.2s linear;
+       }
+
+       .outer-prev{
+          left: initial;
+          right: 210px;
+       }
+
+       .outer-next{ right: 158px; }
+
+       .swiper-horizontal>.swiper-scrollbar,
+       .swiper-scrollbar.swiper-scrollbar-horizontal{
+          right: 0;
+          left: unset;
+          right: 270px;
+
+       }
+
+       .swiper-scrollbar-horizontal {
+          width: 700px;
+
+       }
+
+       .swiper-scrollbar-drag{
+          height: 8px;
+          top: -2px;
+       }
+
+       .btn-all{
+          @include absolute($b: -110px, $r: 12px);
+       }
+    }
+ }
+
+
+ :root {
+    --swiper-navigation-color: #FFF;
+
+    --swiper-scrollbar-bottom: -95px;
+    --swiper-scrollbar-sides-offset: 12%;
+    --swiper-scrollbar-drag-bg-color: #{$secondary-color};
+ }
+
+ .slide-imoveis{
+    --swiper-navigation-size: 20px;
+    --swiper-navigation-top-offset: calc(100% + 80px);
+ }
+
+ .card-imovel{
+    --swiper-navigation-top-offset: calc(50% - 10px);
+ }
+
+
+ .slide{
    padding: 0 120px 0 120px;
    height: 370px;
 
@@ -259,41 +367,93 @@
    }
 }
 
-// .west-stage .item{
-//    height: 100px;
-// }
+ .section-description{
+    background: #272525;
+    padding-top: 0;
+    padding-bottom: 0;
+    position: relative;
+
+    .container-description {
+       display: grid;
+       grid-template-columns:  2fr 1fr;
+
+       padding-top: 135px;
+       padding-bottom: 135px;
+
+       .left {
+          h2, p {
+             color: white;
+          }
+
+          h2 strong { font-weight: 600; }
+
+          strong { color: $secondary-color; font-weight: 500; }
+
+          hr {
+             background: $secondary-color;
+             max-width: 200px;
+             margin-top: 34px;
+             margin-bottom: 34px;
+          }
+
+          .check-items {
+             max-width: 865px;
+
+             div {
+                display: flex;
+                justify-content: flex-start;
+                align-items: flex-end;
+                gap: 14px;
+             }
+          }
+       }
+
+       .right {
+       }
+
+       .btn {
+          background: $secondary-color;
+       }
+    }
+
+    .main-img {
+       position: absolute;
+       bottom: -1px;
+       right: -178px;
+    }
+
+    .check-items {
+       display: grid;
+       grid-template-columns: repeat(2, minmax(0, 1fr)); // 2 colunas
+       column-gap: 0px;
+       row-gap: 26px;
+
+       > div {
+          display: flex;
+          align-items: flex-start;
+          gap: 8px;
+
+          p {
+             margin: 0;
+             line-height: 1.4;
+             font-weight: 300;
+          }
+       }
+
+       img {
+          width: 22px;
+          height: 22px;
+          flex-shrink: 0;
+       }
 
 
 
-
-.scroll-downs {
-   @include absolute($t: 0, $b: 0, $l: 0, $r: 0);
-   @include size(27px, 50px);
-   margin: auto;
-
-   .mousey {
-      @include size(3px, 26px);
-      padding: 10px 10px;
-      border: 2px solid  $primary-color;
-      border-radius: 25px;
-      box-sizing: content-box;
-
-      .scroller {
-         @include size(3px, 10px);
-         border-radius: 25%;
-         animation: scroll 2s cubic-bezier(0.15, 0.41, 0.69, 0.94) infinite;
-      }
-   }
-}
-
-@keyframes scroll {
-   0% { opacity: 0; }
-   10% { transform: translateY(0); opacity: 1; }
-   80% { opacity: 1; }
-   100% { transform: translateY(18px); opacity: 0; }
-}
-
-
+       // responsivo: vira 1 coluna no mobile
+       @media (max-width: 768px) {
+          grid-template-columns: 1fr;
+       }
+    }
+ }
 
 
 
@@ -315,11 +475,55 @@
 
 
 .section-home-contato{
-   h2{ letter-spacing: .67em; }
+   background: #f2f1eb;
+   padding-top: 140px;
+
+   h2{
+      font-size: 30px;
+      letter-spacing: 0.21em;
+
+      strong { font-weight: 700; }
+   }
+
+   h3 { font-size: 24px; line-height: 2;}
+
+   h3 strong { font-weight: 500; }
 
    .img2{
       @include absolute($b: -175px, $l: -136px);
       max-width: 823px;
+   }
+
+   .btn {
+      background: $secondary-color;
+      padding-left: 50px;
+      padding-right: 50px;
+
+      span {
+         font-weight: 400;
+         letter-spacing: .139em;
+      }
+   }
+
+   p.info-container {
+      text-transform: uppercase;
+      font-size: 12px;
+      font-weight: 200;
+      letter-spacing: 0.32em;
+      line-height: 2.5;
+
+      strong {
+         font-size: 24px;
+         font-weight: 600;
+         line-height: 1.8;
+      }
+   }
+
+
+   form .btn {
+      background: #272525;
+
+      span { color: white; }
    }
 }
 
